@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '@environments/environment';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -19,9 +19,13 @@ export class HomepageComponent implements OnInit {
          this.checkScroll();
       });
     }
-    console.log(environment)
+    //console.log(environment['stack_img'])
   }
 
+  stackImage(src:string) {
+    let loc = 'https://raw.githubusercontent.com/'
+    return environment.production ? src : loc + environment['stack_img'] + src
+  }
   openMenu(){
     return this.menuToggle = !this.menuToggle;
   }
