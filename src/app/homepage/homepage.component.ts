@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environments } from '@environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ export class HomepageComponent implements OnInit {
          this.checkScroll();
       });
     }
+    /console.log(environments)
   }
 
   openMenu(){
