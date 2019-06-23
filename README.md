@@ -1,3 +1,3 @@
 # mainweb
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/mainweb)
+Getting the nation to where they want to be :)
